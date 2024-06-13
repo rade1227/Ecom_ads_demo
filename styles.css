@@ -1286,3 +1286,12 @@ textarea {
 .next:hover {
   background-color: #0056b3;
 }
+@media screen and (max-device-width: 740px) {
+ 
+  .container {
+    /* padding: 20px; */
+    width:90%;
+    margin: 0;
+  }
+  
+}
