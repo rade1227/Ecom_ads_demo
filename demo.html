@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    @keyframes slidy {
+      from {
+        /*Has to be adjusted per Image amount.*/
+
+        left: 0%;
+      }
+
+      to {
+        left: -43%;
+      }
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    /*Slider Container*/
+    #slider {
+      text-align: center;
+      margin: 0;
+      justify-content: center;
+      /*Set to width of Page*/
+      width: 1400px;
+      overflow: hidden;
+      margin: 100px auto;
+      /*development background*/
+    }
+
+    #slider-image-container {
+      /*This needs to be large enough to house all Images*/
+      /*Take Image size, times by amount of Images (400x5=2000px)*/
+      width: 2000px;
+      margin: 0 auto;
+      position: relative;
+      /*Manually set centerish for Codepen*/
+      left: 0;
+      font-size: 0;
+      /*Animation repeats forwards and backwards with rubber-banding effect*/
+      animation: slidy 25s infinite linear alternate;
+    }
+
+    /*Image control*/
+    .slider-image {
+      float: left;
+      width: 400px;
+      height: 200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .image-description {
+      position: absolute;
+      text-align: left;
+      padding: 10px;
+      bottom: 0%;
+      width: 400px;
+      height: 150px;
+      opacity: 0.5;
+      box-sizing: border-box;
+    }
+
+    .image-description h2 {
+      color: black;
+      font-size: 18px;
+      margin-top: 3px;
+    }
+
+    .image-description p {
+      color: black;
+      font-size: 14px;
+      margin-top: 25px;
+    }
+  </style>
+
+  <body>
+    <div id="slider">
+      <div id="slider-image-container">
+        <figure class="slider-image">
+          <img src="images/test1.jpeg" alt="" />
+          <div class="image-description">
+            <p><strong>Scott Hilse</strong></p>
+            <p>
+              "These guys are great because their formula is specific to making
+              a product a winner, based on all previous testing results. They
+              really know how to make a great Facebook ad video."
+            </p>
+          </div>
+        </figure>
+
+        <figure class="slider-image">
+          <img src="images/test2.jpeg" alt="" />
+          <div class="image-description">
+            <p><strong>Scott Hilse</strong></p>
+            <p>
+              "These guys are great because their formula is specific to making
+              a product a winner, based on all previous testing results. They
+              really know how to make a great Facebook ad video."
+            </p>
+          </div>
+        </figure>
+
+        <figure class="slider-image">
+          <img src="images/test1.jpeg" alt="Left blank as to see container" />
+          <div class="image-description">
+            <p><strong>Scott Hilse</strong></p>
+            <p>
+              "These guys are great because their formula is specific to making
+              a product a winner, based on all previous testing results. They
+              really know how to make a great Facebook ad video."
+            </p>
+          </div>
+        </figure>
+
+        <figure class="slider-image">
+          <img src="images/test1.jpeg" alt="" />
+          <div class="image-description">
+            <p><strong>Tan Choudhury</strong></p>
+            <p>
+              "They make the process of getting sales so much easier. You know
+              you are getting high converting ads from someone prevalent in the
+              industry."
+            </p>
+          </div>
+        </figure>
+
+        <figure class="slider-image">
+          <img src="images/test1.jpeg" alt="" />
+          <div class="image-description">
+            <p><strong>Scott Hilse</strong></p>
+            <p>
+              "These guys are great because their formula is specific to making
+              a product a winner, based on all previous testing results. They
+              really know how to make a great Facebook ad video."
+            </p>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div style="background-color: red">
+      <p>gbuhnijmok</p>
+    </div>
+
+    <!-- ******************************************************** -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Viral Ecom Adz</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Copyright Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Content/Extras</h3>
+          <ul>
+            <li><a href="#">Become An Affiliate</a></li>
+            <li><a href="#">Join Our Discord</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">F.A.Q</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service:</h3>
+          <p>Available 7 Days A Week</p>
+          <p>9:00 am - 5:00 pm EST</p>
+          <p>
+            Email:
+            <a
+              style="text-decoration: none; color: #fff"
+              href="mailto:support@gmail"
+              >gmail</a
+            >
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Business Days:</h3>
+          <p>Monday - Friday</p>
+          <p>9:00 am - 5:00 pm est</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024, Viral Ecom Adz- by
+          <a href="" target="_blank" style="text-decoration: none"></a
+          >Influencer Labs
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/417c74e92d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>ECOM ADz</title>
+    <style>
+      .img-adpackage-header {
+        background-color: #007aff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.5em;
+      }
+      .img-adpackage-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      .img-adpackage-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      .img-adpackage-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        max-width: 300px;
+        flex: 1 1 300px;
+      }
+      .img-adpackage-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .img-adpackage-title {
+        font-size: 1.2em;
+        margin: 15px 0;
+      }
+      .img-adpackage-rating {
+        color: #ffcc00;
+      }
+      .img-adpackage-price {
+        margin: 10px 0;
+      }
+      .img-adpackage-details {
+        text-align: left;
+        margin: 15px 0;
+      }
+      .img-adpackage-details ul {
+        list-style: none;
+        padding: 0;
+      }
+      .img-adpackage-details li {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+      }
+      .img-adpackage-details li i {
+        color: #007aff;
+        margin-right: 10px;
+      }
+      .img-adpackage-signup {
+        background-color: #007aff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15px;
+      }
+      .img-adpackage-signup:hover {
+        background-color: #005bb5;
+      }
+      .img-adpackage-summary {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0;
+      }
+      .img-adpackage-summary div {
+        flex: 1 1 200px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .img-adpackage-order-info {
+        margin: 30px 0;
+        padding: 20px;
+        background-color: #007aff;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
+        max-width: 600px;
+      }
+      .img-adpackage-order-info h3 {
+        margin: 0 0 15px 0;
+      }
+      @media screen and (max-width: 768px) {
+        .img-adpackage-card {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <section class="animation" style="text-align: center">
+        <div class="first">
+          <div>All Users- Get 50% off</div>
+        </div>
+        <div class="second">
+          <div>To all our Users - 24-48hrs Delivery</div>
+        </div>
+        <!-- <div class="third"><div>Delivery on all days</div></div> -->
+      </section>
+    </div>
+
+    <div class="navbar">
+			<!-- <div style="text-align: center" class="logo"> -->
+			<div>
+				<a href="home.html">
+					<button class="btn-logo">
+						<i class="animation-logo"></i>Viral Ecom Adz
+						<i class="animation-logo"></i>
+					</button>
+				</a>
+			</div>
+			<!-- </h3> -->
+
+			<div class="menu" id="menu">
+				<div class="dropdown">
+					<button class="dropbtn">
+						Video Ads <span><i class="fa-solid fa-angle-down"></i></span>
+					</button>
+					<div class="dropdown-content">
+						<a href="videopackage.html">Video Ad Packages </a>
+						<a href="videoexample.html">Video Ad Examples</a>
+						<a href="video-ad-submission.html">Video Ad Submission Form</a>
+						<a href="video-revision.html">Video Ad Revision Form</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">
+						Image Ads <span><i class="fa-solid fa-angle-down"></i></span>
+					</button>
+					<div class="dropdown-content">
+						<a href="imageproduct1.html">Image Ad Packages</a>
+						<a href="imageexample.html">Image Ad Examples</a>
+						<a href="image-ad-submission.html">Image Ad Submission Form</a>
+						<a href="image-rev.html">Image Ad Revision Form</a>
+					</div>
+				</div>
+				<!-- <div class="dropdown">
+          <button class="dropbtn">Tiktok Shop</button>
+          <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+        </div> -->
+				<div class="dropdown">
+					<button class="dropbtn">
+						UGC Ads <span><i class="fa-solid fa-angle-down"></i></span>
+					</button>
+					<div class="dropdown-content">
+						<a href="ugc-package.html">UGC Ad Packages</a>
+						<a href="ugcexample.html">UGC Ad Examples</a>
+						<a href="UGC-sub.html">UGC Ad Submission Form</a>
+						<a href="">UGC Ad Revision Form</a>
+					</div>
+				</div>
+				<!-- <div class="dropdown">
+          <button class="dropbtn">VIP Members</button>
+          <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+        </div> -->
+			</div>
+			<div class="user-actions">
+				<div class="icons">
+					<a href="#"><i class="fas fa-search"></i></a>
+					<a href="#"><i class="fas fa-shopping-cart"></i></a>
+					<a href="#"><i class="fas fa-user"></i></a>
+				</div>
+			</div>
+			<div class="menu-toggle" id="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+    <div class="img-adpackage-header">Image Ad Packages</div>
+    <div class="img-adpackage-container">
+      <div class="img-adpackage-main">
+        <div class="img-adpackage-card">
+          <img
+            src="images/Image Ad Split Testing Package copy.jpeg"
+            alt="Image Ad Split Testing Package"
+          />
+          <div class="img-adpackage-title">Image Ad Split Testing Package</div>
+          <div class="img-adpackage-rating">⭐⭐⭐⭐⭐ (1)</div>
+          <div class="img-adpackage-price">
+            <p>VIP Members: $12.50</p>
+            <p>Non Members: $50.00</p>
+          </div>
+          <div class="img-adpackage-details">
+            <ul>
+              <li>
+                <i class="fas fa-check"></i> 5 Image Ad Variations For 1 Product
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Scripted Proven-To-Convert Sales
+                Copy
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Facebook/Instagram Feeds (1:1)
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="img-adpackage-signup">BUY IT NOW</a>
+        </div>
+      </div>
+      <div class="img-adpackage-summary">
+        <div>
+          <i class="fas fa-truck"></i>
+          <p>Delivery In 1-3 Business Days</p>
+        </div>
+        <div>
+          <i class="fas fa-bullseye"></i>
+          <p>Proven-To-Convert Ad Creatives</p>
+        </div>
+        <div>
+          <i class="fas fa-sync-alt"></i>
+          <p>Unlimited Revisions</p>
+        </div>
+      </div>
+      <div class="img-adpackage-order-info">
+        <h3>Place Your Order</h3>
+        <p>Order the package that best fits your business needs.</p>
+        <h3>Submission Form</h3>
+        <p>
+          You will receive a post-purchase email with a link to fill out your
+          product's image ad submission form.
+        </p>
+        <h3>Receive Your Image Ad</h3>
+        <p>
+          We will deliver your image ad within 1-3 business days to the email
+          you used to purchase.
+        </p>
+        <h3>Need Revisions?</h3>
+        <p>
+          Fill out the Image Ad Revision Form for unlimited revisions within 7
+          days from when delivered!
+        </p>
+      </div>
+    </div>
+
+    <!-- ******************** FOOTER START************************************ -->
+    <footer>
+			<div class="footer-container">
+				<div class="footer-column">
+					<h3>Viral Ecom Adz</h3>
+					<ul>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Refund Policy</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright Policy</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Content/Extras</h3>
+					<ul>
+						<li><a href="#">Become An Affiliate</a></li>
+						<li><a href="#">Join Our Discord</a></li>
+						<li><a href="#">Membership</a></li>
+						<li><a href="#">F.A.Q</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Customer Service:</h3>
+					<p>Available 7 Days A Week</p>
+					<p>9:00 am - 5:00 pm EST</p>
+					<p>
+						Email:
+						<a
+							style="text-decoration: none; color: #fff"
+							href="mailto:support@gmail"
+							>gmail</a
+						>
+					</p>
+				</div>
+				<div class="footer-column">
+					<h3>Business Days:</h3>
+					<p>Monday - Friday</p>
+					<p>9:00 am - 5:00 pm est</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>
+					&copy; 2024, Viral Ecom Adz- by
+					<a
+						href="https://www.influencerlabs.in"
+						target="_blank"
+						style="text-decoration: none"
+					></a
+					>Influencer Labs
+				</p>
+			</div>
+		</footer>
+    <!-- ******************** FOOTER END************************************ -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

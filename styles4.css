@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.form-container-UGC-adsubmission {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.ugc-form-UGC-adsubmission {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title-UGC-adsubmission {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-instructions-UGC-adsubmission {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-label-UGC-adsubmission {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input-UGC-adsubmission, .form-textarea-UGC-adsubmission {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-textarea-UGC-adsubmission {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-submit-UGC-adsubmission {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-submit-UGC-adsubmission:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .form-container-UGC-adsubmission {
+        padding: 10px;
+    }
+
+    .form-title-UGC-adsubmission {
+        font-size: 20px;
+    }
+
+    .form-instructions-UGC-adsubmission {
+        font-size: 12px;
+    }
+
+    .form-input-UGC-adsubmission, .form-textarea-UGC-adsubmission {
+        font-size: 14px;
+    }
+
+    .form-submit-UGC-adsubmission {
+        font-size: 14px;
+    }
+}

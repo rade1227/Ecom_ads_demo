@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/417c74e92d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>ECOM ADz</title>
+    <!-- ************************** style ***************************************** -->
+
+    <style>
+      .checkout-payment-container {
+        margin: 50px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        max-width: 1200px;
+        width: 100%;
+      }
+      .checkout-payment-header {
+        background-color: #007aff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.5em;
+        width: 100%;
+      }
+      .checkout-payment-form {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 100%;
+        margin: 20px 0;
+      }
+      .checkout-payment-form-section {
+        flex: 1 1 300px;
+        padding: 10px;
+      }
+      .checkout-payment-form-section h3 {
+        margin-top: 0;
+      }
+      .checkout-payment-form-section input,
+      .checkout-payment-form-section select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .checkout-payment-form-section label {
+        margin-top: 10px;
+        display: block;
+      }
+      .checkout-payment-cart {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 100%;
+        margin: 20px 0;
+      }
+      .checkout-payment-cart-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .checkout-payment-cart-item img {
+        max-width: 100px;
+      }
+      .checkout-payment-cart-summary {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        font-size: 1.2em;
+      }
+      .checkout-payment-button {
+        background-color: #007aff;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        width: 100%;
+      }
+      .checkout-payment-button:hover {
+        background-color: #005bb5;
+      }
+      @media (max-width: 768px) {
+        .checkout-payment-form {
+          flex-direction: column;
+        }
+      }
+    </style>
+
+    <!-- ************************style end ****************************** -->
+  </head>
+
+  <body>
+    <div class="header">
+      <section class="animation" style="text-align: center">
+        <div class="first">
+          <div>All Users- Get 50% off</div>
+        </div>
+        <div class="second">
+          <div>To all our Users - 24-48hrs Delivery</div>
+        </div>
+        <!-- <div class="third"><div>Delivery on all days</div></div> -->
+      </section>
+    </div>
+
+    <div class="navbar">
+			<!-- <div style="text-align: center" class="logo"> -->
+			<div>
+				<a href="home.html">
+					<button class="btn-logo">
+						<i class="animation-logo"></i>Viral Ecom Adz
+						<i class="animation-logo"></i>
+					</button>
+				</a>
+			</div>
+			<!-- </h3> -->
+
+			<div class="menu" id="menu">
+				<div class="dropdown">
+					<button class="dropbtn">
+						Video Ads <span><i class="fa-solid fa-angle-down"></i></span>
+					</button>
+					<div class="dropdown-content">
+						<a href="videopackage.html">Video Ad Packages </a>
+						<a href="videoexample.html">Video Ad Examples</a>
+						<a href="video-ad-submission.html">Video Ad Submission Form</a>
+						<a href="video-revision.html">Video Ad Revision Form</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">
+						Image Ads <span><i class="fa-solid fa-angle-down"></i></span>
+					</button>
+					<div class="dropdown-content">
+						<a href="imageproduct1.html">Image Ad Packages</a>
+						<a href="imageexample.html">Image Ad Examples</a>
+						<a href="image-ad-submission.html">Image Ad Submission Form</a>
+						<a href="image-rev.html">Image Ad Revision Form</a>
+					</div>
+				</div>
+				<!-- <div class="dropdown">
+          <button class="dropbtn">Tiktok Shop</button>
+          <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+        </div> -->
+				<div class="dropdown">
+					<button class="dropbtn">
+						UGC Ads <span><i class="fa-solid fa-angle-down"></i></span>
+					</button>
+					<div class="dropdown-content">
+						<a href="ugc-package.html">UGC Ad Packages</a>
+						<a href="ugcexample.html">UGC Ad Examples</a>
+						<a href="UGC-sub.html">UGC Ad Submission Form</a>
+						<a href="">UGC Ad Revision Form</a>
+					</div>
+				</div>
+				<!-- <div class="dropdown">
+          <button class="dropbtn">VIP Members</button>
+          <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+        </div> -->
+			</div>
+			<div class="user-actions">
+				<div class="icons">
+					<a href="#"><i class="fas fa-search"></i></a>
+					<a href="#"><i class="fas fa-shopping-cart"></i></a>
+					<a href="#"><i class="fas fa-user"></i></a>
+				</div>
+			</div>
+			<div class="menu-toggle" id="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+    <!-- *************************MENU END**************************************** -->
+    <div class="checkout-payment-header">Checkout</div>
+    <div class="checkout-payment-container">
+      <form class="checkout-payment-form">
+        <div class="checkout-payment-form-section">
+          <h3>Contact</h3>
+          <label for="email">Email (Required)</label>
+          <input type="email" id="email" name="email" required />
+          <label>
+            <input type="checkbox" name="subscribe" checked /> Keep me up to
+            date on news and exclusive offers
+          </label>
+        </div>
+        <div class="checkout-payment-form-section">
+          <h3>Payment</h3>
+          <p>All transactions are secure and encrypted.</p>
+          <label for="card-number">Card number</label>
+          <input type="text" id="card-number" name="card-number" required />
+          <label for="expiry-date">Expiration date (MM / YY)</label>
+          <input type="text" id="expiry-date" name="expiry-date" required />
+          <label for="security-code">Security code</label>
+          <input type="text" id="security-code" name="security-code" required />
+          <label for="card-name">Name on card</label>
+          <input type="text" id="card-name" name="card-name" required />
+        </div>
+        <div class="checkout-payment-form-section">
+          <h3>Billing address</h3>
+          <label for="country">Country/Region</label>
+          <select id="country" name="country" required>
+            <option value="uae">United Arab Emirates</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+          </select>
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first-name" required />
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name" required />
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required />
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required />
+          <label for="emirate">Emirate</label>
+          <select id="emirate" name="emirate" required>
+            <option value="dubai">Dubai</option>
+            <option value="abu-dhabi">Abu Dhabi</option>
+            <option value="sharjah">Sharjah</option>
+          </select>
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+      </form>
+      <div class="checkout-payment-cart">
+        <h3>Order Summary</h3>
+        <div class="checkout-payment-cart-item">
+          <img
+            src="images/split-testing-package.jpg"
+            alt="Split Testing Package"
+          />
+          <div>
+            <p>Split Testing Package (4 Ad Variants for 1 Product)</p>
+            <p>$550.00</p>
+          </div>
+        </div>
+        <div class="checkout-payment-cart-item">
+          <img
+            src="images/img-ad-split-testing.jpg"
+            alt="Image Ad Split Testing Package"
+          />
+          <div>
+            <p>Image Ad Split Testing Package</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="checkout-payment-cart-summary">
+          <span>Total</span>
+          <span>USD $600.00</span>
+        </div>
+        <button class="checkout-payment-button">Pay now</button>
+      </div>
+    </div>
+    <!-- ******************** FOOTER START************************************ -->
+    <footer>
+			<div class="footer-container">
+				<div class="footer-column">
+					<h3>Viral Ecom Adz</h3>
+					<ul>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Refund Policy</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright Policy</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Content/Extras</h3>
+					<ul>
+						<li><a href="#">Become An Affiliate</a></li>
+						<li><a href="#">Join Our Discord</a></li>
+						<li><a href="#">Membership</a></li>
+						<li><a href="#">F.A.Q</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Customer Service:</h3>
+					<p>Available 7 Days A Week</p>
+					<p>9:00 am - 5:00 pm EST</p>
+					<p>
+						Email:
+						<a
+							style="text-decoration: none; color: #fff"
+							href="mailto:support@gmail"
+							>gmail</a
+						>
+					</p>
+				</div>
+				<div class="footer-column">
+					<h3>Business Days:</h3>
+					<p>Monday - Friday</p>
+					<p>9:00 am - 5:00 pm est</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>
+					&copy; 2024, Viral Ecom Adz- by
+					<a
+						href="https://www.influencerlabs.in"
+						target="_blank"
+						style="text-decoration: none"
+					></a
+					>Influencer Labs
+				</p>
+			</div>
+		</footer>
+    <!-- ******************** FOOTER END************************************ -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
